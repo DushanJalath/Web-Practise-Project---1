@@ -6,137 +6,157 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <nav>
+        <header class="main-header">
+            <nav class="nav main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="store.html">Store</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
-            <hr>
-            <h1>BackStreet Boys</h1>
+
+            <h1 class="band-name band-name-large">BackStreet Boys</h1>
+            <div class="container">
+                <button class="btn btn-header">Get Over Latest album</button>
+            </div>
+            
+            <br>
+            <br>
+            <button class="btn btn-header btn-play"type="button">&#9658;</button>
+
         </header>
         <section>
-            <h2>Music</h2>
-            <div>
-                <div>
-                    <Strong>Millennium</Strong>
+            <h2 class="section-header">Music</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-tittle" >Millennium</span>
+                    <img class="shop-item-image"src="Assets/Images/Millennium.jpg" alt="millenium album">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">20 $</span>
+                        <button class="btn primary-btn shop-item-btn"type="button">Add to Cart</button>
+                    </div>
                 </div>
-                <img src="Assets/Images/Millennium.jpg" alt="millenium album">
                 <div>
-                    <span>20 $</span>
-                    <button type="button">Add to Cart</button>
+                    <div class="shop-item">
+                        <span class="shop-item-tittle">This is us</span>
+                    </div>
+                    <img class="shop-item-image" src="Assets/Images/This_Is_Us.jpg" alt="this is us album">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">20 $</span>
+                        <button class="btn primary-btn shop-item-btn" type="button">Add to Cart</button>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <Strong>This is us</Strong>
+                <div class="shop-item">
+                    <div>
+                        <span class="shop-item-tittle">BackStreet's Back</span>
+                    </div>
+                    <img class="shop-item-image" src="Assets/Images/Backstreet's_Back.jpg" alt="backstreet's back album">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">22 $</span>
+                        <button class="btn primary-btn shop-item-btn" type="button">Add to Cart</button>
+                    </div>
                 </div>
-                <img src="Assets/Images/This_Is_Us.jpg" alt="this is us album">
-                <div>
-                    <span>20 $</span>
-                    <button type="button">Add to Cart</button>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <Strong>BackStreet's Back</Strong>
-                </div>
-                <img src="Assets/Images/Backstreet's_Back.jpg" alt="backstreet's back album">
-                <div>
-                    <span>22 $</span>
-                    <button type="button">Add to Cart</button>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <Strong>In a World Like This</Strong>
-                </div>
-                <img src="Assets/Images/In_a_World_Like_This.png" alt="in a world like this album">
-                <div>
-                    <span>20 $</span>
-                    <button type="button">Add to Cart</button>
+                <div class="shop-item">
+                    <div>
+                        <span class="shop-item-tittle">In a World Like This</span>
+                    </div>
+                    <img class="shop-item-image" src="Assets/Images/In_a_World_Like_This.png" alt="in a world like this album">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">20 $</span>
+                        <button class="btn primary-btn shop-item-btn" type="button">Add to Cart</button>
+                    </div>
                 </div>
             </div>
         </section>
+        
         <section>
-            <h2>Merch</h2>
-            <div>
-                <div>
-                    <Strong>T - Shirt</Strong>
+            <h2 class="section-header">Merch</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <div>
+                        <span class="shop-item-tittle">T - Shirt</span>
+                    </div>
+                    <img class="shop-item-image" src="Assets/Images/bsb_tshirt.jpg" alt="t Shirt">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">10 $</span>
+                        <button class="btn primary-btn shop-item-btn" type="button">Add to Cart</button>
+                    </div>
                 </div>
-                <img src="Assets/Images/bsb_tshirt.jpg" alt="t Shirt">
-                <div>
-                    <span>10 $</span>
-                    <button type="button">Add to Cart</button>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <Strong>Mug</Strong>
-                </div>
-                <img src="Assets/Images/backstreet-boys-mug.jpg" alt="mug">
-                <div>
-                    <span>6 $</span>
-                    <button type="button">Add to Cart</button>
+                <div class="shop-item">
+                    <div>
+                        <span class="shop-item-tittle">Mug</span>
+                    </div>
+                    <img class="shop-item-image" src="Assets/Images/backstreet-boys-mug.jpg" alt="mug">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">6 $</span>
+                        <button class="btn primary-btn shop-item-btn" type="button">Add to Cart</button>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
-            <h2>Cart</h2>
-            <div>
-                <strong>ITEM</strong>
-                &lt;&gt;
-                <strong>PRICE</strong>
-                &lt;&gt;
-                <strong>QUANTITY</strong>
+        <section class="content content-section">
+            <h2 class="section-header">Cart</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-coloumn">ITEM</span>
+
+                <span class="cart-price cart-header cart-coloumn">PRICE</span>
+
+                <span class="cart-quantity cart-header cart-coloumn">QUANTITY</span>
             </div>
-            <div>
-                <img src="Assets/Images/bsb_tshirt.jpg" width="100" height="100">
-                <span>T-Shirt</span>
-                &lt;&gt;
-                <span>$10</span>
-                &lt;&gt;
-                <input type="number" value="1">
-                <button type="button">REMOVE</button>
-            </div>
-            <div>
-                <img src="Assets/Images/In_a_World_Like_This.png" width="100" height="100">
-                <span>Album</span>
-                &lt;&gt;
-                <span>$20</span>
-                &lt;&gt;
-                <input type="number" value="1">
-                <button role="button">REMOVE</button>
-            </div>
-            <div>
-                <strong>Total</strong>
-                <span>32 $</span>
-            </div>
-            <div>
-                <button role="button">Purchase</button>
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-item cart-coloumn">
+                        <img class="cart-item-image" src="Assets/Images/bsb_tshirt.jpg" width="100" height="100">
+                        <span class="cart-item-title">T-Shirt</span>
+                    </div> 
+                    <span class="cart-price cart-coloumn">$10</span>
+                    <div class="cart-quantity cart-coloumn">
+                        <input class="quantity-input" type="number" value="1">
+                        <button class="btn btn-danger cart-quantity-btn" type="button">REMOVE</button>
+                    </div>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-item cart-coloumn">
+                        <img class="cart-item-image"  src="Assets/Images/In_a_World_Like_This.png" width="100" height="100">
+                        <span class="cart-item-title">Album</span>
+                    </div>
+                    <span class="cart-price cart-coloumn">$20</span>
+                    <div class="cart-quantity cart-coloumn">
+                        <input class="quantity-input" type="number" value="1">
+                        <button class="btn btn-danger cart-quantity-btn" role="button">REMOVE</button>
+                    </div>
+                    
+                </div>
+                <div class="cart-total">
+                    <span class="cart-total-title">Total</span>
+                    <span class="cart-total-price">32 $</span>
+                </div>
+
+                    <button class="btn primary-btn btn-purchase" role="button">Purchase</button>
+
             </div>
         </section>
-        <footer>
-            <h3>BackStreet Boys</h3>
-            <ul>
-                <li>
-                    <a href="https://www.youtube.com/" target="_blank">
-                        <img src="Assets/Images/youtube logo.jpg" alt="youtube">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.spotify.com/lk-en/premium/?utm_source=lk-en_brand_contextual_text&utm_medium=paidsearch&utm_campaign=alwayson_sas_lk_premiumbusiness_core_brand+contextual-desktop+text+exact+lk-en+google&gclsrc=aw.ds&gclid=Cj0KCQjwg_iTBhDrARIsAD3Ib5jlJ3g9SJ96KmT-dVhGlNyOQPMYwIonobDinoZqc0BpbBopqhEI9n8aAi72EALw_wcB" target="_blank">
-                        <img src="Assets/Images//spotify logo.png" alt="spotify">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank" >
-                        <img src="Assets/Images/facebook logo.png" alt="facebook">
-                    </a>
-                </li>
-            </ul>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">BackStreet Boys</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img src="Assets/Images/youtube logo.jpg" alt="youtube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com/lk-en/premium/?utm_source=lk-en_brand_contextual_text&utm_medium=paidsearch&utm_campaign=alwayson_sas_lk_premiumbusiness_core_brand+contextual-desktop+text+exact+lk-en+google&gclsrc=aw.ds&gclid=Cj0KCQjwg_iTBhDrARIsAD3Ib5jlJ3g9SJ96KmT-dVhGlNyOQPMYwIonobDinoZqc0BpbBopqhEI9n8aAi72EALw_wcB" target="_blank">
+                            <img src="Assets/Images//spotify logo.png" alt="spotify">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" >
+                            <img src="Assets/Images/facebook logo.png" alt="facebook">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
